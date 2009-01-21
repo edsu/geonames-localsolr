@@ -1,7 +1,7 @@
-How to get your own local-solr instance with geonames cities data. More
-information available at http://www.gissearch.com/geo_search_intro
+Ever wanted your own geonames data service? Here's how to get your own 
+local-solr instance with geonames cities data in minutes:
 
-0. bzr branch http://inkdroid.org/bzr/geonames-localsolr
+0. bzr branch http://inkdroid.org/bzr/geonames-localsolr # a few files
 1. wget http://www.nsshutdown.com/solr-example.tgz
 2. tar xvfz solr-example.tgz
 3. cp schema.xml solr-example/apache-solr-1.3.0/example/solr/conf/schema.xml
@@ -13,3 +13,7 @@ information available at http://www.gissearch.com/geo_search_intro
 9. ./index.py cities1000.txt http://localhost:8083/solr
 10. watch & wait
 11. http://localhost:8083/solr/select/?/solr/select?&qt=geo&lat=-42.7833&long=147.0666&radius=50&q=*:*
+
+More information about local-solr available at:
+
+  http://www.gissearch.com/geo_search_intro
