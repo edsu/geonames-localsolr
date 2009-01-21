@@ -20,7 +20,7 @@ for row in codecs.open(sys.argv[1], encoding='utf8'):
 
     s.add(id=id, name=name, lat=lat, lng=lng, state=state, country=country,
             alt_name=alt_name)
-    if count * 1000 == 0:
+    if count % 1000 == 0:
         s.commit()
     print "[%s] %s %s  %s [%s]" % (count, name, state, country, id)
 
