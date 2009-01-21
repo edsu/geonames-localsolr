@@ -202,6 +202,7 @@
        multiValued="false" omitNorms="true"/>
    <field name="alt_name" type="text" indexed="true" stored="true"
        multiValued="true" omitNorms="true" />
+   <field name="state" type="string" indexed="true" stored="true" />
    <field name="country" type="string" indexed="true" stored="true"
        multiValued="false" />
 
