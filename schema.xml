@@ -203,10 +203,11 @@
    <field name="alt_name" type="text" indexed="true" stored="true"
        multiValued="true" omitNorms="true" />
    <field name="state" type="string" indexed="true" stored="true" />
-   <field name="country" type="string" indexed="true" stored="true"
-       multiValued="false" />
-
-<!-- local lucene field types -->
+   <field name="country" type="string" indexed="true" stored="true" />
+   <field name="population" type="sint" indexed="true" stored="true" />
+   <field name="elevation" type="sint" indexed="true" stored="true" />
+   <field name="gtopo30" type="sint" indexed="true" stored="true" />
+   <field name="timezone" type="string" indexed="true" stored="true" />
    <field name="lat" type="sdouble" indexed="true" stored="true"/>
    <field name="lng" type="sdouble" indexed="true" stored="true"/>
    <field name="geo_distance" type="sdouble"/>
