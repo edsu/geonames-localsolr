@@ -1,7 +1,7 @@
 Ever wanted your own geonames data service? Here's how to get your own 
 local-solr instance with geonames cities data in minutes:
 
-0. bzr branch http://inkdroid.org/bzr/geonames-localsolr # a few files
+0. git clone https://edsu@github.com/edsu/geonames-localsolr.git
 1. wget http://www.nsshutdown.com/solr-example.tgz
 2. tar xvfz solr-example.tgz
 3. cp schema.xml solr-example/apache-solr-1.3.0/example/solr/conf/schema.xml
